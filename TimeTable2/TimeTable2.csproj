@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D51E143-AE07-4C9B-9BB8-794DD9453A54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TimeTable2</RootNamespace>
+    <AssemblyName>TimeTable2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticalAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticalAssign.Designer.cs">
+      <DependentUpon>PracticalAssign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticalDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticalDetails.Designer.cs">
+      <DependentUpon>PracticalDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectAssign.Designer.cs">
+      <DependentUpon>SubjectAssign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectDetails.Designer.cs">
+      <DependentUpon>SubjectDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherDetails.Designer.cs">
+      <DependentUpon>TeacherDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableDataSet4.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticalAssign.resx">
+      <DependentUpon>PracticalAssign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticalDetails.resx">
+      <DependentUpon>PracticalDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectAssign.resx">
+      <DependentUpon>SubjectAssign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectDetails.resx">
+      <DependentUpon>SubjectDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherDetails.resx">
+      <DependentUpon>TeacherDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TimeTableDataSet.xsc">
+      <DependentUpon>TimeTableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableDataSet.xss">
+      <DependentUpon>TimeTableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet1.xsc">
+      <DependentUpon>TimeTableDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableDataSet1.xss">
+      <DependentUpon>TimeTableDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet2.xsc">
+      <DependentUpon>TimeTableDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableDataSet2.xss">
+      <DependentUpon>TimeTableDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet3.xsc">
+      <DependentUpon>TimeTableDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableDataSet3.xss">
+      <DependentUpon>TimeTableDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet4.xsc">
+      <DependentUpon>TimeTableDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableDataSet4.xss">
+      <DependentUpon>TimeTableDataSet4.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\somaiya.png" />
+    <None Include="Resources\tt.gif" />
+    <Content Include="TimeTable.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
